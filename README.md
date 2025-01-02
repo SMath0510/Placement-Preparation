@@ -135,3 +135,50 @@ Smart Pointers, Inheritance, C++ Keywords (virtual, static, const, constexpr), t
 ---
 
 While preparing for placements I also referred to another wonderful [**github repository**](https://github.com/anirudhakulkarni/Placements-2024) by an Anirudha Kulkarni IITD.
+
+# Interview Experiences
+
+## 1. TrexQuant  
+I visited the TrexQuant office, and the evaluation process was as follows:  
+- **11:00 AM - 12:00 PM:** Introduction to Trading Alphas  
+- **12:00 PM - 3:00 PM:** Given a Jupyter Notebook, develop a modification technique to improve the current alpha (e.g., using mathematical operators for smoothing, specific trading strategies, etc.)  
+- **3:00 PM - 6:00 PM:** Interview (Each individual had a 30-minute interview based on their resume and submitted alpha; there were 12-13 participants in total).  
+
+**Key Focus Areas:**  
+The firm focuses on the use of ML and DL for creating alphas and trading strategies. Having a strong background in mathematics and machine learning is a significant advantage.
+
+---
+
+## 2. SquarePoint  
+There were three rounds of interviews conducted by SquarePoint:  
+1. **Rounds 1 and 2:** Focused on probability puzzles and problems related to random walks, the central limit theorem, and Markov chains.  
+2. **Round 3:** A final HR round where the interviewer asked about the resume and provided an overview of the firm's work.  
+
+---
+
+## 3. QuantBox  
+The test for QuantBox was quite advanced, with questions resembling:  
+- **102 Problems in Combinatorics**  
+- **3Blue1Brown Videos**  
+- **Arthur Engel** and other advanced books.  
+
+**Interview Round:**  
+- The interview questions were mathematically challenging and focused on algorithmic thinking and problem-solving (puzzles and games) rather than purely probability-based questions.
+
+---
+
+## 4. QuadEye  
+QuadEye's evaluation consisted of **five rounds of interviews**:  
+1. **Rounds 1-4:**  
+   - Purely technical  
+   - Each round lasted 45 minutes to 1 hour.  
+   - Questions covered diverse domains:  
+     - Probability puzzles  
+     - Algorithmic puzzles  
+     - Dice games  
+     - Markov chains  
+     - Statistics  
+     - Finance and option pricing (especially due to my background in option pricing).  
+
+2. **Round 5 (Final Round):**  
+   - An HR round where the Head of HR explained the work involved and logistics related to the role.
