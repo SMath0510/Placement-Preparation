@@ -19,8 +19,9 @@ Trust me, it is very important to fix your goal before starting the preparation.
 
 ### Software Developer  
 **Key Skills:**  
-- Familiarity with Software Tools  
-- Strong understanding of core CS (Operating Systems, Computer Architecture, C++, etc.)  
+- Algorithmic Thinking  
+- Knowledge of CS concepts (Operating Systems, Computer Architecture, etc.)
+- Familiarity with Relevant Software Tools and Languages (C++, SQL, Python, etc.)
 
 ---
 
@@ -30,6 +31,7 @@ Deciding on your goal is critical because there is **almost zero overlap** betwe
 
 I spent three months being unsure and confused. Finally, one month before the final interviews, I decided to go with the **Quantitative Trading/Research** role because I realized I was more inclined towards finance and markets than the usage and development of software tools.
 
+> **Niranjan:** I was preparing for 3 different roles for a while (quant, core elec, software), thinking that I would maximize my chances if I cast as wide a net as possbile. Later I realized it wasn't really feasible to do this. "A jack of all trades is a master of none." I decided to stick with **Software Engineering** because I enjoyed the SWE work I did in various insti clubs and projects.
 
 # Placement Preparation Guide
 
@@ -117,9 +119,23 @@ While preparing for any of these topics, remember that none of the questions you
 ### C++
 - [**The Whimsical**](https://whimsical.com/object-oriented-programming-cheatsheet-by-love-babbar-YbSgLatbWQ4R5paV7EgqFw) by Babbar  
 - [**The Cherno Playlist**](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)  
-- **Scott Meyers** (Book)
-(This includes some of the niche properties of the C++ language as well, though the major focus of the reader should be to get himself/herself familiarized with concepts related to:
-Smart Pointers, Inheritance, C++ Keywords (virtual, static, const, constexpr), templates, references, auto keyword, function pointers, virtual table, heap vs stack, move vs copy).
+- **Scott Meyers** (Books)
+(He has 2 major books, which give advice on writing high-quality C++ using features specific to it. It tells you how other people use C++ features to write maintainable code)
+
+Learn as much as you can, but make sure that you definitely cover the following: (abridged from [this very nice list](https://www.reddit.com/r/cpp/comments/19a947f/comment/kijytx9/) -- read if you get the time)
+- STL containers -- `vector`, `array` (different from `x[]` arrays), (`unordered_`)`set`, (`unordered_`)`map`, `flat_map`, `string`, `list`, `queue`, `stack`, `deque` -- know basics of how these things are implemented, and which one is fastest for which applications
+- Heap vs. stack allocation -- when to use what, which containers use which, `new`/`delete`
+- Inheritance -- `virtual` functions, `virtual` inheritance, abstract classes, type erasure, virtual function tables (why is it slow), "rule of 5" (virtual destructor)
+- `static_cast`, `dynamic_cast`, `bit_cast`, why are these better than normal casting?
+- Pass by value, reference, and const-reference; dangling reference
+- Smart pointers, and pointer types (`unique_ptr`, `shared_ptr`, `weak_ptr`, `string_view`)
+- Compiler vs. linker vs. assembler, what is `static`, why are `.cpp` files different from `.h` files
+- Function/operator overloading, argument-dependent lookup
+- Templates, template inference, SFINAE
+- `std::move` semantics, why/how would you use `std::forward` (`&` vs `&&`), copy ellision
+- Function objects vs. function pointers, lambdas, `auto` keyword in lambdas, closures
+- Compile-time polymorphism (`std::variant`, CRTP)
+- Compile-time evaluation (`const` vs `constexpr`, `consteval`, passing objects as template parameters)
 
 ### Operating Systems (OS)
 - [**The Whimsical**](https://whimsical.com/operating-system-cheatsheet-by-love-babbar-S9tuWBCSQfzoBRF5EDNinQ) by Babbar  
@@ -128,9 +144,23 @@ Smart Pointers, Inheritance, C++ Keywords (virtual, static, const, constexpr), t
 - **Linux and Its Working** (Book)
 (Main focus of this book could be to get familiarized with different linux commands and implementation of various linux based methods (file directory management, user permissions, kernel implementation, etc.))
 
+Learn as much as you can, but make sure that you definitely cover the following:
+- Virtual memory vs physical memory, paging, why it exists
+- Semaphores, locks and various locked data structures, and examples of race conditions
+- INodes and how file systems work
+- Calculations based on virtual memory (e.g. how many pages can this multi-level page table address?)
+- Calculations based on `fork()` and number of handles being created
+
 ### Computer Architecture
 - [**IITB Playlist**](https://www.youtube.com/playlist?list=PLw6vmiIQrilTWa5twNV8opVJ3ge_kEfsM)
 (This is a concise playlist for revising complete comp arch.)
+
+Learn as much as you can, but make sure that you definitely cover the following:
+- Caches, levels of caches, how are each of these used?
+- Cache synchronization, why is it hard? When can writing parallelized code be slower?
+- TLB
+- Pipelining, what causes pipeline stall, when would you want to intentionally stall?
+- Superscalar processors and out-of-order execution, memory barriers and `std::atomic` in C++
 
 ---
 
